@@ -3,17 +3,17 @@ CREATE DATABASE bamazon_db;
 USE bamazon_db;
 
 CREATE TABLE products (
-  item_id INTEGER (9999) AUTO_INCREMENT NOT NULL,
-  product_name VARCHAR(999) NOT NULL,
-  department_name VARCHAR(999) NOT NULL,
-  price DECIMAL(99,2) NOT NULL,
+  item_id INTEGER (225) AUTO_INCREMENT NOT NULL,
+  product_name VARCHAR(225) NOT NULL,
+  department_name VARCHAR(225) NOT NULL,
+  price DECIMAL(65,2) NOT NULL,
   stock_quantity INTEGER(99) NOT NULL,
   PRIMARY KEY (item_id)
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES 
---store inventory is in prime numbers
+-- store inventory is in prime numbers
   ("Propane", "Propane and Propane Accessories", 2.36, 997),
   ("20 lb Propane Tank", "Propane and Propane Accessories", 29.99, 479),
   ("Type IV Casette Tape", "Obsolete Electronics", 21.99, 1009), 
